@@ -446,94 +446,149 @@ nav a.ticket-btn::after {
 }
 
 /* ================================
+   PREVENT HORIZONTAL OVERFLOW SITE-WIDE
+================================ */
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+* { box-sizing: border-box; }
+
+/* ================================
    MOBILE RESPONSIVE — ≤768px
 ================================ */
 @media (max-width: 768px) {
 
-  /* Header */
+  /* ---- Global: no sideways scroll ---- */
+  html, body { overflow-x: hidden; }
+  section, header, footer, div { max-width: 100%; }
+
+  /* ---- Header ---- */
   header {
-    padding: 1.2rem 5%;
+    padding: 1rem 5%;
     flex-wrap: nowrap;
   }
-
-  .logo img { height: 40px; }
-
-  /* Hide desktop nav, show burger */
+  .logo img { height: 36px; }
   #main-nav { display: none !important; }
   .burger-btn { display: flex; }
 
-  /* Hero */
-  .hero { height: auto; min-height: 100dvh; }
-
-  .hero-content {
-    padding: 0 5vw !important;
-  }
-
-  .hero-content h1 {
-    font-size: 14vw !important;
-    letter-spacing: -1px !important;
-    white-space: normal !important;
-  }
-
-  /* floating shapes — hide on mobile */
-  .hero-shapes { display: none; }
-
-  /* Vertical branding text — hide on mobile */
+  /* ---- Hide vertical branding text ---- */
   body > div[style*="writing-mode"] { display: none; }
 
-  /* Theme icons grid */
-  .theme-icon { width: 120px; height: 120px; }
-  .theme-title { font-size: 0.9rem; }
+  /* ---- HERO ---- */
+  .hero {
+    height: 100dvh !important;
+    min-height: 0 !important;
+    overflow: hidden;
+    align-items: flex-end !important;
+    padding-bottom: 8vh;
+  }
 
-  /* Sticky event cards — keep sticky but adapt layout */
+  .hero-content {
+    padding: 0 6vw !important;
+    width: 100% !important;
+  }
+
+  /* On mobile: each word on its own line, giant size */
+  .hero-content h1 {
+    font-size: 22vw !important;
+    line-height: 0.9 !important;
+    letter-spacing: -2px !important;
+    white-space: normal !important;
+    gap: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  /* "please" row */
+  .hero-content h1 > div:first-child {
+    flex-wrap: wrap;
+  }
+
+  /* "the art" row: stack word2 + "the art" as block */
+  .hero-content h1 > div:last-child {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
+  /* word2 container takes full width when present */
+  #word2-container {
+    width: auto !important;
+    overflow: visible !important;
+  }
+
+  .hero-shapes { display: none; }
+
+  /* ---- Theme icons ---- */
+  .theme-icon { width: 100px; height: 100px; }
+  .theme-title { font-size: 0.85rem; }
+
+  /* ---- STICKY EVENT CARDS ---- */
   .sticky-card {
     position: sticky !important;
-    top: 10px;
-    margin-bottom: 2rem;
+    top: 0 !important;
+    margin-bottom: 2px !important;
+    z-index: auto;
   }
 
   .event-row {
     flex-direction: column !important;
     height: auto !important;
-    gap: 1.5rem !important;
-    padding: 2rem !important;
-    min-height: 400px;
+    min-height: 0 !important;
+    max-width: 100% !important;
+    padding: 2rem 1.5rem !important;
+    gap: 0 !important;
+    border-radius: 16px !important;
+    overflow: hidden;
   }
 
-  .event-info { max-width: 100% !important; }
+  .event-info {
+    max-width: 100% !important;
+    z-index: 2;
+    position: relative;
+  }
 
+  /* Image sits below text, clipped to a fixed height */
   .event-visual {
-    height: 220px;
-    overflow: hidden;
+    width: 100% !important;
+    height: 200px !important;
     position: relative !important;
+    overflow: hidden;
+    margin-top: 1.5rem;
+    border-radius: 12px;
+    flex: none !important;
   }
 
   .event-visual img {
     position: absolute !important;
-    right: -1rem !important;
     top: 50% !important;
-    transform: translateY(-50%) !important;
-    max-height: 240px !important;
+    left: 50% !important;
+    right: auto !important;
+    transform: translate(-50%, -50%) !important;
+    height: 280px !important;
     width: auto !important;
+    max-height: none !important;
   }
 
-  /* Outline text section */
-  .outline-text { font-size: 18vw; }
-  .outline-text-section { padding: 4rem 5%; }
+  /* ---- Outline text ---- */
+  .outline-text { font-size: 20vw; }
+  .outline-text-section { padding: 3rem 5%; }
 
-  /* Page content inner pages */
-  .page-content { padding: 7rem 5% 3rem; }
+  /* ---- Inner pages ---- */
+  .page-content { padding: 6rem 5% 3rem; }
   .page-content h1 { font-size: 2.5rem; }
 
-  /* Two-col flex layouts → single col */
   .page-content[style*="display: flex"],
   section[style*="display: flex"] {
     flex-direction: column !important;
-    gap: 3rem !important;
+    gap: 2.5rem !important;
     padding-top: 7rem !important;
+    padding-left: 5% !important;
+    padding-right: 5% !important;
   }
 
-  /* Footer */
+  /* ---- Footer ---- */
   footer {
     flex-direction: column !important;
     text-align: center !important;
@@ -541,13 +596,9 @@ nav a.ticket-btn::after {
     gap: 1.5rem !important;
   }
 
-  footer div[style*="gap: 3rem"] {
-    gap: 1.5rem !important;
-  }
-
-  /* Participate/Contact headings */
+  /* ---- Participate/Contact headings ---- */
   h1[style*="flex-direction: column"] {
-    font-size: 3.5rem !important;
+    font-size: 3rem !important;
   }
 }
 
@@ -571,4 +622,3 @@ nav a.ticket-btn::after {
     font-size: 11vw !important;
   }
 }
-

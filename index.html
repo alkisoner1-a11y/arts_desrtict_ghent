@@ -283,8 +283,14 @@
                     word1El.style.transform = 'translateY(20px)';
                     word2El.style.transform = 'translateY(20px)';
                     
-                    const targetWidth = words[wordIndex].w2 === '' ? 0 : word2El.scrollWidth;
-                    document.getElementById('word2-container').style.width = targetWidth + 'px';
+                    const isMobile = window.innerWidth <= 768;
+                    if (!isMobile) {
+                        const targetWidth = words[wordIndex].w2 === '' ? 0 : word2El.scrollWidth;
+                        document.getElementById('word2-container').style.width = targetWidth + 'px';
+                    } else {
+                        // On mobile, width is handled by CSS (auto), just show/hide
+                        document.getElementById('word2-container').style.width = 'auto';
+                    }
                     
                     void word1El.offsetWidth;
                     
