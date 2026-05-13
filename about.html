@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Arts Destrict Ghent</title>
+    <link rel="icon" type="image/svg+xml" href="assets/asterisc_logo.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/logo_menu.svg" alt="Arts Destrict Ghent Logo">
+            </a>
+        </div>
+        <nav id="main-nav" style="display: flex; align-items: center; gap: 3rem;">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="participate.html">Participate</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="events.html" class="ticket-btn" style="margin-top: 0;">
+                <span class="btn-text">EVENTS</span>
+                <span class="btn-arrow"><span style="display: inline-block; transition: transform 0.3s ease;">&#8594;</span></span>
+            </a>
+        </nav>
+        <button class="burger-btn" id="burger-btn" aria-label="Menu">
+            <img src="assets/asterisc_logo.svg" alt="Menu">
+        </button>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <button class="mobile-menu-close" id="mobile-menu-close">✕</button>
+        <nav class="mobile-menu-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="participate.html">Participate</a>
+            <a href="contact.html">Contact</a>
+            <a href="events.html" class="mobile-menu-events">Events →</a>
+        </nav>
+    </div>
+
+    <section class="page-content" style="padding-top: 14rem; padding-bottom: 2rem; max-width: 1400px; margin: 0 auto; box-sizing: border-box;">
+        <!-- Intro Hero -->
+        <div style="margin-bottom: 8rem; text-align: center;">
+            <h1 style="font-size: 8rem; font-weight: 900; color: var(--primary-green); text-transform: uppercase; line-height: 1; margin-bottom: 2rem;">
+                THE ARTS<br><span style="color: transparent; -webkit-text-stroke: 2px var(--text-white);">DISTRICT GHENT</span>
+            </h1>
+            <p style="font-size: 1.5rem; color: #e0e0e0; max-width: 800px; margin: 0 auto; line-height: 1.6; font-weight: 300;">
+                We are a creative collective driving the cultural heartbeat of Ghent. Our mission is to transform urban spaces into living canvases.
+            </p>
+        </div>
+
+        <!-- The Campaign -->
+        <div style="display: flex; gap: 6rem; align-items: center; margin-bottom: 10rem; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 300px;">
+                <h2 style="font-size: 4rem; font-weight: 900; color: var(--primary-green); margin-bottom: 2rem; line-height: 1; text-transform: uppercase;">The 2026<br>Campaign</h2>
+                <div style="border-left: 2px solid var(--primary-green); padding-left: 2rem; margin-bottom: 2rem;">
+                    <p style="font-size: 1.1rem; line-height: 1.8; color: #ccc; font-weight: 300; margin-bottom: 1.5rem;">
+                        Our current campaign, <em style="color: #fff;">"Please Touch The Art,"</em> challenges the traditional boundaries of galleries. We believe art should not just be observed from a distance, but deeply felt, experienced, and physically interacted with. 
+                    </p>
+                    <p style="font-size: 1.1rem; line-height: 1.8; color: #ccc; font-weight: 300;">
+                        Through a series of immersive installations, live performances, and guerrilla exhibitions, we are bringing the boldest contemporary artists directly to the streets and warehouses of Ghent.
+                    </p>
+                </div>
+            </div>
+            <div style="flex: 1; min-width: 300px; text-align: center;">
+                <img src="assets/logo_menu.svg" style="width: 100%; max-width: 400px; height: 400px; object-fit: contain; filter: drop-shadow(0 0 20px rgba(138, 255, 231, 0.4));">
+            </div>
+        </div>
+
+        <!-- The Organization -->
+        <div style="display: flex; gap: 6rem; align-items: center; margin-bottom: 10rem; flex-wrap: wrap; flex-direction: row-reverse;">
+            <div style="flex: 1; min-width: 300px;">
+                <h2 style="font-size: 4rem; font-weight: 900; color: #fff; margin-bottom: 2rem; line-height: 1; text-transform: uppercase;">Our<br>Organization</h2>
+                <div style="border-left: 2px solid #fff; padding-left: 2rem; margin-bottom: 2rem;">
+                    <p style="font-size: 1.1rem; line-height: 1.8; color: #ccc; font-weight: 300; margin-bottom: 1.5rem;">
+                        Founded in 2020, Arts Destrict Ghent is a non-profit coalition of curators, artists, and city planners. We operate at the intersection of urban design and fine art.
+                    </p>
+                    <p style="font-size: 1.1rem; line-height: 1.8; color: #ccc; font-weight: 300;">
+                        With the support of local communities and international visionaries, we host over 50 events annually, providing a platform for both emerging local talent and established global icons.
+                    </p>
+                </div>
+            </div>
+            <div style="flex: 1; min-width: 300px; text-align: center; position: relative;">
+                <img src="assets/asterisc_logo.svg" style="width: 100%; max-width: 500px; height: 500px; object-fit: contain; animation: spin 25s linear infinite reverse; filter: drop-shadow(0 0 20px rgba(138, 255, 231, 0.4));">
+            </div>
+        </div>
+
+        <!-- Sponsors Section -->
+        <div style="text-align: center; margin-bottom: 4rem; padding: 6rem 2rem; background: rgba(255, 255, 255, 0.02); border-radius: 30px;">
+            <h2 style="font-size: 2.5rem; font-weight: 300; color: var(--primary-green); margin-bottom: 4rem; text-transform: uppercase; letter-spacing: 4px;">Supported By</h2>
+            <div style="display: flex; justify-content: center; align-items: center; gap: 5rem; flex-wrap: wrap; opacity: 0.8;">
+                <!-- Placeholder Sponsors -->
+                <div style="font-size: 1.8rem; font-weight: 900; text-transform: uppercase; letter-spacing: 1px;">019 Ghent</div>
+                <div style="font-size: 1.8rem; font-weight: 300; font-style: italic;">City of Ghent</div>
+                <div style="display: flex; align-items: center; gap: 15px; font-weight: 900; font-size: 1.5rem;">
+                    <img src="assets/asterisc_2.svg" style="height: 40px; filter: invert(1);"> FLUX MEDIA
+                </div>
+                <div style="font-size: 1.8rem; font-weight: 900; text-transform: uppercase; letter-spacing: 5px;">URBAN.ART</div>
+                <div style="font-size: 1.5rem; font-weight: 700; border: 2px solid #fff; padding: 0.8rem 1.5rem;">THE LAB</div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="padding: 4rem; border-top: 1px solid rgba(255, 255, 255, 0.1); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 2rem; max-width: 1400px; margin: 0 auto; box-sizing: border-box;">
+        <div style="max-width: 300px;">
+            <img src="assets/logo_menu.svg" alt="Logo" style="height: 40px; margin-bottom: 1rem;">
+            <p style="color: #666; font-size: 0.9rem; margin: 0; font-weight: 300;">© 2026 Arts Destrict Ghent. All rights reserved.</p>
+        </div>
+        <div style="display: flex; gap: 3rem;">
+            <a href="#" style="color: #fff; text-decoration: none; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; font-weight: 300;">Instagram</a>
+            <a href="#" style="color: #fff; text-decoration: none; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; font-weight: 300;">Facebook</a>
+            <a href="#" style="color: #fff; text-decoration: none; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; font-weight: 300;">Twitter</a>
+        </div>
+    </footer>
+
+    <script>
+        const burgerBtn = document.getElementById('burger-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeBtn = document.getElementById('mobile-menu-close');
+        burgerBtn.addEventListener('click', () => { mobileMenu.classList.add('open'); document.body.style.overflow = 'hidden'; });
+        closeBtn.addEventListener('click', () => { mobileMenu.classList.remove('open'); document.body.style.overflow = ''; });
+    </script>
+</body>
+</html>

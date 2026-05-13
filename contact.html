@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Arts Destrict Ghent</title>
+    <link rel="icon" type="image/svg+xml" href="assets/asterisc_logo.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/logo_menu.svg" alt="Arts Destrict Ghent Logo">
+            </a>
+        </div>
+        <nav id="main-nav" style="display: flex; align-items: center; gap: 3rem;">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="participate.html">Participate</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <a href="events.html" class="ticket-btn" style="margin-top: 0;">
+                <span class="btn-text">EVENTS</span>
+                <span class="btn-arrow"><span style="display: inline-block; transition: transform 0.3s ease;">&#8594;</span></span>
+            </a>
+        </nav>
+        <button class="burger-btn" id="burger-btn" aria-label="Menu">
+            <img src="assets/asterisc_logo.svg" alt="Menu">
+        </button>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <button class="mobile-menu-close" id="mobile-menu-close">✕</button>
+        <nav class="mobile-menu-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="participate.html">Participate</a>
+            <a href="contact.html">Contact</a>
+            <a href="events.html" class="mobile-menu-events">Events →</a>
+        </nav>
+    </div>
+
+    <section class="page-content" style="padding-top: 10rem; padding-bottom: 5rem; max-width: 1400px; margin: 0 auto; box-sizing: border-box; display: flex; gap: 8rem; flex-wrap: wrap;">
+        
+        <div style="flex: 1; min-width: 300px;">
+            <h1 style="font-size: 8rem; font-weight: 900; text-transform: lowercase; margin-bottom: 2rem; color: var(--primary-green); letter-spacing: -2px; display: flex; flex-direction: column;">
+                <span style="line-height: 1.1;">get in</span>
+                <span style="color: transparent; -webkit-text-stroke: 2px var(--text-white); line-height: 1.1;">touch</span>
+            </h1>
+            <p style="font-size: 1.2rem; color: #ccc; line-height: 1.8; font-weight: 300; max-width: 400px;">
+                Whether you have a question about an upcoming event, or simply want to say hello, we are always open to connecting with the community.
+            </p>
+        </div>
+
+        <div style="flex: 1; min-width: 400px; display: flex; flex-direction: column; justify-content: center;">
+            <div style="border-left: 2px solid var(--primary-green); padding-left: 3rem; margin-bottom: 4rem;">
+                <h3 style="font-size: 1.2rem; color: var(--primary-green); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1rem; font-weight: 700;">General Inquiries</h3>
+                <p style="font-size: 2rem; font-weight: 300; color: #fff; margin: 0;">hello@artsdistrictghent.com</p>
+            </div>
+
+            <div style="border-left: 2px solid #fff; padding-left: 3rem; margin-bottom: 4rem;">
+                <h3 style="font-size: 1.2rem; color: #fff; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1rem; font-weight: 700;">Press & Media</h3>
+                <p style="font-size: 2rem; font-weight: 300; color: #fff; margin: 0;">press@artsdistrictghent.com</p>
+            </div>
+
+            <div style="border-left: 2px solid #555; padding-left: 3rem;">
+                <h3 style="font-size: 1.2rem; color: #888; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1rem; font-weight: 700;">Headquarters</h3>
+                <p style="font-size: 1.5rem; font-weight: 300; color: #ccc; margin: 0; line-height: 1.6;">
+                    Veldstraat 1<br>
+                    9000 Ghent<br>
+                    Belgium
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <div style="text-align: center; padding-bottom: 5rem; opacity: 0.5;">
+        <img src="assets/asterisc_2.svg" style="height: 150px; animation: spin 30s linear infinite;">
+    </div>
+
+    <footer style="padding: 4rem; border-top: 1px solid rgba(255, 255, 255, 0.1); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 2rem; max-width: 1400px; margin: 0 auto; box-sizing: border-box;">
+        <div style="max-width: 300px;">
+            <img src="assets/logo_menu.svg" alt="Logo" style="height: 40px; margin-bottom: 1rem;">
+            <p style="color: #666; font-size: 0.9rem; margin: 0; font-weight: 300;">© 2026 Arts Destrict Ghent. All rights reserved.</p>
+        </div>
+        <div style="display: flex; gap: 3rem;">
+            <a href="#" style="color: #fff; text-decoration: none; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; font-weight: 300;">Instagram</a>
+            <a href="#" style="color: #fff; text-decoration: none; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; font-weight: 300;">Facebook</a>
+            <a href="#" style="color: #fff; text-decoration: none; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; font-weight: 300;">Twitter</a>
+        </div>
+    </footer>
+
+    <script>
+        const burgerBtn = document.getElementById('burger-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeBtn = document.getElementById('mobile-menu-close');
+        burgerBtn.addEventListener('click', () => { mobileMenu.classList.add('open'); document.body.style.overflow = 'hidden'; });
+        closeBtn.addEventListener('click', () => { mobileMenu.classList.remove('open'); document.body.style.overflow = ''; });
+    </script>
+</body>
+</html>

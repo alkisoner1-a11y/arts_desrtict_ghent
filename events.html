@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Arts Destrict Ghent</title>
+    <link rel="icon" type="image/svg+xml" href="assets/asterisc_logo.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/logo_menu.svg" alt="Arts Destrict Ghent Logo">
+            </a>
+        </div>
+        <nav id="main-nav" style="display: flex; align-items: center; gap: 3rem;">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="participate.html">Participate</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="events.html" class="ticket-btn active" style="margin-top: 0;">
+                <span class="btn-text">EVENTS</span>
+                <span class="btn-arrow"><span style="display: inline-block; transition: transform 0.3s ease;">&#8594;</span></span>
+            </a>
+        </nav>
+        <button class="burger-btn" id="burger-btn" aria-label="Menu">
+            <img src="assets/asterisc_logo.svg" alt="Menu">
+        </button>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <button class="mobile-menu-close" id="mobile-menu-close">✕</button>
+        <nav class="mobile-menu-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="participate.html">Participate</a>
+            <a href="contact.html">Contact</a>
+            <a href="events.html" class="mobile-menu-events">Events →</a>
+        </nav>
+    </div>
+
+    <section class="page-content" style="padding-top: 10rem; padding-bottom: 5rem; max-width: 1400px; margin: 0 auto; box-sizing: border-box;">
+        
+        <!-- SECTION 1 -->
+        <div style="text-align: left; margin-bottom: 6rem;">
+            <h1 style="font-size: 6rem; font-weight: 900; text-transform: lowercase; margin-bottom: 2rem; color: #fff; letter-spacing: -2px; display: flex; justify-content: flex-start; align-items: center; gap: 1rem; flex-wrap: wrap;">
+                <span>please <span style="color: var(--primary-green);">touch</span></span>
+                <img src="assets/asterisk_1.svg" style="height: 0.8em; filter: drop-shadow(0 0 15px rgba(138, 255, 231, 0.4)); animation: spin 20s linear infinite;">
+                <span>the art</span>
+            </h1>
+        </div>
+
+        <div style="margin-bottom: 12rem;">
+            <!-- Event Card 1 -->
+            <div style="display: flex; gap: 4rem; align-items: stretch; justify-content: space-between; background: #03254e; color: #ffffff; padding: 4rem; border-radius: 20px; margin-bottom: 3rem;">
+                <!-- Left Side -->
+                <div style="flex: 1; max-width: 500px; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <h3 style="font-size: 4rem; font-weight: 900; line-height: 1; color: var(--primary-green); margin-bottom: 1.5rem; font-style: italic;">
+                            Daft <span style="font-size: 2rem; font-weight: 400; color: transparent; -webkit-text-stroke: 1px var(--primary-green); font-style: normal; vertical-align: middle;">consert</span><br>Funk Live
+                        </h3>
+                        <div style="border: 1px solid #1e62d0; padding: 1.5rem; margin-bottom: 2rem;">
+                            <p style="font-size: 1rem; line-height: 1.6; color: #e0e0e0; margin: 0; font-weight: 300; font-family: 'Inter', sans-serif;">
+                                One of the world's most prestigious Daft Punk tribute bands. They incorporate their own synchronised light shows together with live instruments to give a truly immersive and unique experience.
+                            </p>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 1rem; align-items: center;">
+                        <div style="border: 1px solid #1e62d0; padding: 1rem; flex: 1;">
+                            <p style="font-size: 0.9rem; margin: 0; font-weight: 300; font-family: 'Inter', sans-serif;">06/01/2026 - 15/02/2026</p>
+                        </div>
+                        <a href="#" class="ticket-btn" style="margin: 0; padding: 1rem 1.5rem;"><span class="btn-text">TICKETS</span></a>
+                    </div>
+                </div>
+                <!-- Right Side -->
+                <div style="flex: 1; position: relative;">
+                    <img src="assets/daf_asterisk.svg" style="position: absolute; right: -4rem; top: -4rem; height: calc(100% + 8rem); width: auto; object-fit: contain;">
+                </div>
+            </div>
+
+            <!-- Event Card 2 -->
+            <div style="display: flex; gap: 4rem; align-items: stretch; justify-content: space-between; background: #1a1a1a; color: #ffffff; padding: 4rem; border-radius: 20px; margin-bottom: 3rem; border: 1px solid rgba(255,255,255,0.05);">
+                <div style="flex: 1; max-width: 500px; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <h3 style="font-size: 4rem; font-weight: 900; line-height: 1; color: var(--primary-green); margin-bottom: 1.5rem; text-transform: uppercase;">
+                            VISION OF<br>DESIGN
+                        </h3>
+                        <div style="border: 1px solid #444; padding: 1.5rem; margin-bottom: 2rem;">
+                            <p style="font-size: 1rem; line-height: 1.6; color: #e0e0e0; margin: 0; font-weight: 300; font-family: 'Inter', sans-serif;">
+                                Discover how powerful ideas transform into meaningful visuals at this exclusive seminar built for creators and innovators who want to elevate their creative perspective.
+                            </p>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 1rem; align-items: center;">
+                        <div style="border: 1px solid #444; padding: 1rem; flex: 1;">
+                            <p style="font-size: 0.9rem; margin: 0; font-weight: 300; font-family: 'Inter', sans-serif;">March 12, 2026</p>
+                        </div>
+                        <a href="#" class="ticket-btn" style="margin: 0; padding: 1rem 1.5rem;"><span class="btn-text">TICKETS</span></a>
+                    </div>
+                </div>
+                <div style="flex: 1; position: relative;">
+                    <img src="assets/event_image_1.svg" style="position: absolute; right: -4rem; top: -4rem; height: calc(100% + 8rem); width: auto; object-fit: contain;">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- SECTION 2 -->
+        <div style="text-align: left; margin-bottom: 6rem;">
+            <h1 style="font-size: 6rem; font-weight: 900; text-transform: lowercase; margin-bottom: 2rem; color: #fff; letter-spacing: -2px; display: flex; justify-content: flex-start; align-items: center; gap: 1rem; flex-wrap: wrap;">
+                <span>please <span style="color: var(--primary-green);">flow with</span></span>
+                <img src="assets/asterisc_3.svg" style="height: 0.8em; filter: drop-shadow(0 0 15px rgba(138, 255, 231, 0.4)); animation: spin 25s linear infinite reverse;">
+                <span>the art</span>
+            </h1>
+        </div>
+
+        <div style="margin-bottom: 10rem;">
+            <!-- Event Card 3 -->
+            <div style="display: flex; gap: 4rem; align-items: stretch; justify-content: space-between; background: #7400B8; color: #ffffff; padding: 4rem; border-radius: 20px; margin-bottom: 3rem;">
+                <div style="flex: 1; max-width: 500px; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <h3 style="font-size: 3.5rem; font-weight: 900; line-height: 1; color: var(--primary-green); margin-bottom: 1.5rem; text-transform: uppercase;">
+                            MO'KALAMITY<br>&amp; THE WIZARDS
+                        </h3>
+                        <div style="border: 1px solid #5e61d9; padding: 1.5rem; margin-bottom: 2rem;">
+                            <p style="font-size: 1rem; line-height: 1.6; color: #e0e0e0; margin: 0; font-weight: 300; font-family: 'Inter', sans-serif;">
+                                Join the global reggae stars for an unforgettable night of flowing rhythms and positive vibrations. A true immersive experience.
+                            </p>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 1rem; align-items: center;">
+                        <div style="border: 1px solid #5e61d9; padding: 1rem; flex: 1;">
+                            <p style="font-size: 0.9rem; margin: 0; font-weight: 300; font-family: 'Inter', sans-serif;">April 18, 2026</p>
+                        </div>
+                        <a href="#" class="ticket-btn" style="margin: 0; padding: 1rem 1.5rem;"><span class="btn-text">TICKETS</span></a>
+                    </div>
+                </div>
+                <div style="flex: 1; position: relative;">
+                    <img src="assets/jazze_asterisc.svg" style="position: absolute; right: -4rem; top: -4rem; height: calc(100% + 8rem); width: auto; object-fit: contain;">
+                </div>
+            </div>
+            
+            <!-- Event Card 4 -->
+            <div style="display: flex; gap: 4rem; align-items: stretch; justify-content: space-between; background: #8B005D; color: #ffffff; padding: 4rem; border-radius: 20px; margin-bottom: 3rem;">
+                <div style="flex: 1; max-width: 500px; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <h3 style="font-size: 3rem; line-height: 1; color: var(--primary-green); margin-bottom: 1.5rem; text-transform: uppercase;">
+                            <span style="font-weight: 300;">WE ARE</span><br><span style="font-weight: 300;">THE NEXT</span><br><span style="font-weight: 900;">GENERATION 2025</span>
+                        </h3>
+                        <div style="border: 1px solid #5e61d9; padding: 1.5rem; margin-bottom: 2rem;">
+                            <p style="font-size: 1rem; line-height: 1.6; color: #e0e0e0; margin: 0; font-weight: 300; font-family: 'Inter', sans-serif;">
+                                An exhibition showcasing the works of emerging local talent pushing the boundaries of multimedia art and digital paradigms.
+                            </p>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 1rem; align-items: center;">
+                        <div style="border: 1px solid #5e61d9; padding: 1rem; flex: 1;">
+                            <p style="font-size: 0.9rem; margin: 0; font-weight: 300; font-family: 'Inter', sans-serif;">May 5 - June 20, 2026</p>
+                        </div>
+                        <a href="#" class="ticket-btn" style="margin: 0; padding: 1rem 1.5rem;"><span class="btn-text">TICKETS</span></a>
+                    </div>
+                </div>
+                <div style="flex: 1; position: relative;">
+                    <img src="assets/asterisc_logo.svg" style="position: absolute; right: -4rem; top: -4rem; height: calc(100% + 8rem); width: auto; object-fit: contain; filter: drop-shadow(0 0 20px rgba(138, 255, 231, 0.4)); animation: spin 30s linear infinite;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="padding: 4rem; border-top: 1px solid rgba(255, 255, 255, 0.1); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 2rem; max-width: 1400px; margin: 0 auto; box-sizing: border-box;">
+        <div style="max-width: 300px;">
+            <img src="assets/logo_menu.svg" alt="Logo" style="height: 40px; margin-bottom: 1rem;">
+            <p style="color: #666; font-size: 0.9rem; margin: 0; font-weight: 300;">© 2026 Arts Destrict Ghent. All rights reserved.</p>
+        </div>
+        <div style="display: flex; gap: 3rem;">
+            <a href="#" style="color: #fff; text-decoration: none; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; font-weight: 300;">Instagram</a>
+            <a href="#" style="color: #fff; text-decoration: none; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; font-weight: 300;">Facebook</a>
+            <a href="#" style="color: #fff; text-decoration: none; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; font-weight: 300;">Twitter</a>
+        </div>
+    </footer>
+
+    <script>
+        const burgerBtn = document.getElementById('burger-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeBtn = document.getElementById('mobile-menu-close');
+        burgerBtn.addEventListener('click', () => { mobileMenu.classList.add('open'); document.body.style.overflow = 'hidden'; });
+        closeBtn.addEventListener('click', () => { mobileMenu.classList.remove('open'); document.body.style.overflow = ''; });
+    </script>
+</body>
+</html>
